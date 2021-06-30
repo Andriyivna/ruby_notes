@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Notes</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Note text</th>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notes.each do |note| %>
+      <tr>
+        <td><%= note.note_text %>
+        <td><%= note.title %>
+        <td><%= link_to 'Show', note %></td>
+        <td><%= link_to 'Edit', edit_note_path(note) %></td>
+        <td><%= link_to 'Delete', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Note', new_note_path %>
+
+
+
+<h1>Notes</h1>
+<div>
+  <div class="row">
+    <p class="col2">
+      <% @notes.each do |note| %>
+        <p>
+          <%= note.title %>
+        </p>
+      <% end %>
+    </div>
+    <div class="col">
+      2 of 3 (wider)
+    </div>
+  </div>
+</div>
