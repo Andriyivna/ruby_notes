@@ -13,3 +13,75 @@
  *= require_tree .
  *= require_self
  */
+
+.notes-list {
+    margin: 2px;
+    padding: 0;
+}
+.note:hover {
+    background: darkgray;
+    color: white;
+}
+.note {
+    background: #eee;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    list-style: none;
+}
+.note-link {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.note-link:hover {
+    color: inherit;
+}
+.active-link {
+    background: #666666;
+}
+.buttons-link-position{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-margin{
+    margin: 2px;
+}
+.add-button{
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 33px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-note-text {
+    background: darkgray;
+    min-height: 800px;
+    border-radius: 30px;
+    margin-right: 20px;
+    color: white;
+}
+
+.note-title {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+}
+.note-text {
+    padding: 15px;
+    font-size: 20px;
+}
+.new-note {
+    padding: 20px;
+}
