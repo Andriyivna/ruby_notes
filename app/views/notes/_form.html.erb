@@ -12,13 +12,14 @@
   <% end %>
 
   <div class="field">
-     <%= form.label :title %>
-    <%= form.text_field :title %>
-     <%= form.label :note_text %>
-     <%= form.text_area :note_text %>
+    <div class="note-title">
+      <%= form.text_area :title, class: "text-field-display" %>
+    </div>
+    <div  class="note-text">
+      <%= form.text_area :note_text, class: "text-area-display" %>
+    </div>
   </div>
-
-  <div class="actions">
+  <div class="">
     <%= form.submit %>
   </div>
 <% end %>

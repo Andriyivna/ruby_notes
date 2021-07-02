@@ -73,15 +73,31 @@
 }
 
 .note-title {
-    padding: 15px;
+    padding: 10px;
     font-weight: bold;
     font-size: 36px;
     color: white;
 }
 .note-text {
-    padding: 15px;
+    padding: 0 10px;
     font-size: 20px;
 }
 .new-note {
     padding: 20px;
+}
+
+.text-area-display {
+    background: transparent;
+    min-height: 400px;
+    min-width: 1020px;
+    border: none;
+    outline: none;
+}
+
+.text-field-display {
+    background: transparent;
+    max-height: 60px;
+    min-width: 1020px;
+    border: none;
+    outline: none;
 }

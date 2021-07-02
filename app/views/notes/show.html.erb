@@ -19,9 +19,8 @@
       <ul class="notes-list">
         <% @notes.each do |note| %>
           <li class="note">
-            <%= link_to note.title, note, class:"note-link" %>
+            <%= link_to note.title, edit_note_path(note), class:"note-link" %>
             <div class="buttons-link-position">
-              <%= link_to '<i class="fas fa-pen" aria-hidden="true"></i>'.html_safe, edit_note_path(note), class: "btn btn-secondary button-margin" %>
               <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, note,  class: "btn btn-secondary button-margin",  method: :delete, data: { confirm: 'Are you sure?' }%>
             </div>
           </li>
