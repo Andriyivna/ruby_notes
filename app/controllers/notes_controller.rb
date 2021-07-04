@@ -14,6 +14,7 @@ class NotesController < ApplicationController
   # GET /notes/new
   def new
     @note = Note.new
+    @notes = Note.all
   end
 
   # GET /notes/1/edit
@@ -27,7 +28,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
-        format.html { redirect_to edit_note_path, notice: "Note was successfully created." }
+        format.html { redirect_to edit_note_path(@note), notice: "Note was successfully created." }
         format.json { render :show, status: :created, location: @note }
       else
         format.html { render :new, status: :unprocessable_entity }

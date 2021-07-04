@@ -66,10 +66,11 @@
 }
 .bg-note-text {
     background: darkgray;
-    min-height: 800px;
+    min-height: 900px;
     border-radius: 30px;
     margin-right: 20px;
     color: white;
+    max-height: 935px;
 }
 
 .note-title {
@@ -88,7 +89,7 @@
 
 .text-area-display {
     background: transparent;
-    min-height: 400px;
+    min-height: 600px;
     min-width: 1020px;
     border: none;
     outline: none;

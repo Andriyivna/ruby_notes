@@ -13,13 +13,15 @@
 
   <div class="field">
     <div class="note-title">
+      <p class="note-text">Title:</p>
       <%= form.text_area :title, class: "text-field-display" %>
     </div>
     <div  class="note-text">
+      <p class="note-text">Note:</p>
       <%= form.text_area :note_text, class: "text-area-display" %>
     </div>
   </div>
-  <div class="">
-    <%= form.submit %>
+  <div class="action">
+    <%= form.submit class: "btn btn-secondary" %>
   </div>
 <% end %>
